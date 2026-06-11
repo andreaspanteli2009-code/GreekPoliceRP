@@ -1,0 +1,113 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Arial;
+  background: linear-gradient(135deg, #061225, #0a1f44, #020814);
+  color: white;
+}
+
+/* NAV */
+nav {
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(12px);
+  padding: 15px;
+  text-align: center;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #4da3ff;
+  text-shadow: 0 0 10px #4da3ff;
+}
+
+/* HEADER */
+header {
+  text-align: center;
+  padding: 50px 20px;
+  background: rgba(0,0,0,0.4);
+}
+
+/* SECTION */
+.section {
+  padding: 40px;
+  text-align: center;
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+/* CARD */
+.card {
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 15px;
+  padding: 20px;
+  transition: 0.3s;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  border: 1px solid #4da3ff;
+  box-shadow: 0 0 25px #4da3ff;
+}
+
+.card.big {
+  max-width: 500px;
+  margin: auto;
+}
+
+/* LINKS CARDS */
+.card.link {
+  display: block;
+  text-decoration: none;
+  color: white;
+}
+
+/* FORM */
+form {
+  max-width: 420px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  background: rgba(255,255,255,0.08);
+  padding: 25px;
+  border-radius: 15px;
+  border: 1px solid rgba(255,255,255,0.15);
+}
+
+input, select, textarea {
+  margin: 10px 0;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+}
+
+button {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #1e90ff, #4da3ff);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #4da3ff;
+}
